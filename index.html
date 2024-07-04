@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Codificador e decodificador de texto. Este site foi um desafio do programa ONE
+    (Oracle Next Education) desenvolvido para aprimorar os conhecimentos em lógica de programação,html,css e JavaScript">
+
+    <title>decodificador de texto</title>
+    <link rel="icon" href="img/icone.png" type ="image/x-icon">
+
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" heref="css/reset.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https:// fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="Index.html" title="Home">
+                <img src="img/letra-a.png" alt="Logo da alura"
+                width="120" height="120" id="logo">
+            </a>
+        </h1>
+    </header>
+    <main class="main">
+        <section>
+            <textarea class="input-texto" cols="40" rows="9" placeholder="Digite seu texto..."></textarea>
+
+            <div class="informacao">
+                <ul class="mensagens-erro"></ul>
+            </div>    
+            <div class="botoes">
+                <button type="button" class="btn-codificar">Codificar</button>
+                <button type="button" class="btn-decodificar">Decodificar</button>
+            </div>
+        </section>
+
+        <section class="container">
+            <textarea class="resultado" cols="20" rows="11" placeholder="" readonly></textarea>
+            
+            <button type="button" class="invisivel btn-copiar">Copiar</button>
+        </section>
+    </main>
+    <footer>
+        <div class="redes">
+            <p>Minhas Redes</p>
+            <a href="https://github.com/AlexanderDev0" title="AlexanderDev0 | GitHub" target="_Blank">
+                <img src="img/logo-github.png" alt="Logo do GitHub em formato circular."
+                width="45" height="45" id="github">
+                GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/alexander-de-oliveria-castro-2baa371b5/" title="Alexander de Oliveira castro | Linkdin" target="_blank">
+                <img src="img/logo-do-linkedin.png" alt="Logo do linkedin em formato circular"
+                width="45" height="45" id="linkedin">
+                linkedIn
+            </a>
+            <a href="https://www.instagram.com/alexander.saan/" title="Alexander | Instagram" target="_blank">
+                <img src="img/instagram.png" alt="Logo do instagram em formato circular"
+                width="45" height="45" id="Instagram">
+                Instagram
+            </a>
+        </div>
+        <div class="credito">
+            <p>&#169; Desenvolvido por Alexander de Oliviera Castro  -  2024</p>
+        </div>
+    </footer>
+    <script src="js/criptografia.js"></script>
+    <script src="js/valida.js"></script>
+    <script src="js/copiar.js"></script>
+</body>
+</html>
